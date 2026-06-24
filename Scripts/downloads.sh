@@ -1,9 +1,20 @@
 #!/usr/bin/bash
 
-mapfile -t packages < <(grep -v '^$' ./Packages.txt) # makes sure there are no empty lines
+mapfile -t pacman < <(grep -v '^$' ./pacman.txt) # makes sure there are no empty lines
+mapfile -t yay < <(grep -v '^$' ./yay.txt) # makes sure there are no empty lines
 
-download(){
-    sudo pacman -S ${packages[@]}
+pacman_downloads(){
+    sudo pacman -Syu ${packages[@]} --noconfirm
 }
 
-download 
+download_yay(){
+    sudo pacman -S --needed git base-devel
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd ~
+    rm -rf yay
+}
+
+pacman_downloads 
+download_yay 
