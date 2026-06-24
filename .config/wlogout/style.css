@@ -1,0 +1,70 @@
+*{
+
+    font-family: "JetBrains Mono", "Fira Code", "Noto Sans", sans-serif;
+	background-image: none;
+	transition: 20ms;
+
+}
+
+
+
+window {
+	background-color: rgba(240, 240, 240, 0.25);
+}
+
+
+button {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: 25%;
+
+    background-position: center;
+    background-color: rgba(240, 240, 240, 0.5);
+    border: 3px solid #FFFFFF;
+
+}
+
+button:hover {
+	background-color: rgba(12, 12 , 12, 0.7);
+	border: 3px solid rgba(51,204,254, 1);
+	color: rgba(51,204,254, 1);
+}
+
+#lock {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}
+

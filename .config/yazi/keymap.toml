@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = [ "y", "y" ]
+run  = 'shell "wl-copy < \"$1\"" --confirm'
+desc = "Copy actual file data (images/text) to system clipboard"

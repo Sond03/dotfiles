@@ -1,0 +1,9 @@
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/Sond03/nvim
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/Sond03/nvim
+[submodule ".config/quickshell"]
+	path = .config/quickshell
+	url = https://github.com/Sond03/quickshell
