@@ -24,7 +24,6 @@ quickshell-git
 ripmime
 ripmime-debug
 rose-pine-hyprcursor
-splunk
 spotify
 ttf-firacode
 ttf-ms-fonts
@@ -32,7 +31,6 @@ uefitool
 uefitool-debug
 vesktop
 vesktop-debug
-visual-studio-code-bin
 vmware-keymaps
 vmware-workstation
 walker-bin
