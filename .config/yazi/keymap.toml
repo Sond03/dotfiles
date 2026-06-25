@@ -2,3 +2,8 @@
 on   = [ "y", "y" ]
 run  = 'shell "wl-copy < \"$1\"" --confirm'
 desc = "Copy actual file data (images/text) to system clipboard"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "plugin save-clipboard-to-file"
+desc = "Paste clipboard content to file"

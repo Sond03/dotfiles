@@ -1,0 +1,7 @@
+[[plugin.deps]]
+use = "boydaihungst/save-clipboard-to-file"
+rev = "4f034ac"
+hash = "4bdfecaa643db1cc28ccba799463d5b8"
+
+[flavor]
+deps = []
