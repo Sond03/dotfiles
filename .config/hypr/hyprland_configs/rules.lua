@@ -37,3 +37,12 @@ hl.window_rule({
     opacity = "1 override",
     persistent_size = true
 })
+
+local game_class = "steam_app_22380"
+
+hl.window_rule({
+    { "forceinput", "class:^(" .. game_class .. ")$" },
+    { "renderunfocused", "class:^(" .. game_class .. ")$" },
+    { "focusonactivate", "class:^(" .. game_class .. ")$" },
+    { "stayfocused", "class:^(" .. game_class .. ")$" }
+})
