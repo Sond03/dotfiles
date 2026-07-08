@@ -40,9 +40,39 @@ hl.window_rule({
 
 local game_class = "steam_app_22380"
 
-hl.window_rule({
-    { "forceinput", "class:^(" .. game_class .. ")$" },
-    { "renderunfocused", "class:^(" .. game_class .. ")$" },
-    { "focusonactivate", "class:^(" .. game_class .. ")$" },
-    { "stayfocused", "class:^(" .. game_class .. ")$" }
+hl.window_rule({ match = { class = "^(" .. game_class .. ")$"},
+    allows_input = true,
+    render_unfocused = true,
+    focus_on_activate = true,
+    stay_focused = true
+})
+
+hl.layer_rule({ match = { namespace = "quickshell"},
+    blur = true,
+    ignore_alpha = 0.2
+})
+
+hl.layer_rule({ match = { namespace = "wlogout" },
+    blur = true,
+    ignore_alpha = 0.5
+})
+
+
+hl.layer_rule({ match = { namespace = "logout_dialog" },
+    blur = true,
+})
+
+hl.layer_rule({ match = { namespace = "^(gtk-layer-shell)"},
+    blur = true,
+    ignore_alpha = 0.1
+})
+
+hl.layer_rule({ match = { namespace = "^(kitty)"},
+    blur = true,
+    ignore_alpha = 0.5
+})
+
+hl.layer_rule({ match = { namespace = "waybar"},
+    blur = true,
+    ignore_alpha = 0.5
 })

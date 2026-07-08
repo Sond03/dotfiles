@@ -17,6 +17,12 @@ hl.config({
 })
 
 
+hl.config({
+    render = {
+        direct_scanout = 1,
+    }
+})
+
 hl.config ( {
     misc = {
         force_default_wallpaper = -1 ,
@@ -135,3 +141,8 @@ hl.config({
     }
 })
 
+hl.config({
+    debug = {
+        damage_tracking = 1,
+    }
+})
