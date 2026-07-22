@@ -47,6 +47,19 @@ hl.window_rule({ match = { class = "^(" .. game_class .. ")$"},
     stay_focused = true
 })
 
+hl.window_rule({
+    match = {
+        class = "^(.*)$",
+        title = "^()$",
+    },
+    float = true,
+    rounding = 5,
+    border_size = 0,
+})
+
+
+-- Layer Rules
+
 hl.layer_rule({ match = { namespace = "quickshell"},
     blur = true,
     ignore_alpha = 0.2
@@ -72,6 +85,10 @@ hl.layer_rule({ match = { namespace = "^(kitty)"},
     ignore_alpha = 0.5
 })
 
+hl.layer_rule({ match = { namespace = "waybar"},
+    blur = true,
+    ignore_alpha = 0.5
+})
 hl.layer_rule({ match = { namespace = "waybar"},
     blur = true,
     ignore_alpha = 0.5
