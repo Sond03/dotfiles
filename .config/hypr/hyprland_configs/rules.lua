@@ -1,5 +1,10 @@
 hl.window_rule({ match = { class = "^Mullvad vpn$", title = "^Mullvad vpn$",float = true} })
 
+hl.window_rule({
+    match = { class = "^org.pwmt.zathura$" },
+    opacity = "1 override"
+})
+
 hl.window_rule({ name  = "fix-xwayland-drags", match = { class = "^$", title = "^$", xwayland = true, float = true, fullscreen = false, pin = false, },
     no_focus = true,
 })

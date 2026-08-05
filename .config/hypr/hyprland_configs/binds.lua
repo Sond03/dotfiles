@@ -12,6 +12,9 @@ hl.bind(mainMod .. " + SHIFT + L",  hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zathura"))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obsidian"))
+hl.bind(mainMod .. " + T", hl.dsp.global("quickshell:toggleAppMenu"))
+hl.bind(mainMod .. " + N", hl.dsp.global("quickshell:toggleNotificationHistory"))
+-- change to r when its done and delete walker
 
 -- Window management
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
