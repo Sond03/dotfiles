@@ -146,3 +146,9 @@ hl.config({
         damage_tracking = 1,
     }
 })
+
+hl.config({
+    cursor = {
+        no_hardware_cursors = 2
+    }
+})
