@@ -29,6 +29,8 @@ hl.config ( {
         disable_hyprland_logo = true,
         disable_hyprland_guiutils_check = true,
         focus_on_activate = true,
+        mouse_move_enables_dpms = true,
+        -- key_press_enables_dpms = true,
     },
 })
 
