@@ -16,6 +16,7 @@ x-scheme-handler/jetbrains=jetbrainsd.desktop
 application/pdf=org.pwmt.zathura.desktop
 image/jpeg=imv.desktop
 image/png=imv.desktop
+x-scheme-handler/spotify=spotify.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
